@@ -12,7 +12,7 @@ scanner de porta TCP simples desenvolvido em Rust
 
 - Rust
 - TCP/IP
-- Redes
+- Rede Local
 
 ## Aviso
 
