@@ -36,7 +36,6 @@ fn main(){
         (start..=end).into_iter().for_each(| x | list.push(x));
         scan_ports(&args.addr, list);
     }
-
     if let Some(ports) = args.list{
         let mut list = vec![];
         let mut split = ports.split(",");
@@ -64,7 +63,6 @@ fn scan_ports(addr: &String, list: Vec<u16>){
         });
         handles.push(handle);
     }
-
     for handle in handles{
         handle.join().unwrap();
     }
